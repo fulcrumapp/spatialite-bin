@@ -4,4 +4,4 @@ const dirs = {
   darwin: 'mac'
 };
 
-export const spatialitePath = path.resolve(path.join(__dirname, 'lib', dirs[process.platform] || 'linux', 'mod_spatialite'));
+export const spatialitePath = path.resolve(path.join(__dirname, 'lib', dirs[process.platform] || 'linux', process.arch, 'mod_spatialite'));
